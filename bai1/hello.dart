@@ -1,13 +1,12 @@
-import 'dart:ffi';
 
-import 'student.dart';
 import 'thuvien.dart';
+import 'dart:io';
 
 main() {
   int a = 5, c = 4;
   int? z;
   double b = 3.17;
-  print("hello $a $z $c ${sum(a, c)} "); //truyen ham
+  print("hello $a $z $c ${sum(a, c)} "+ stdin.readLineSync()); //truyen ham
   printHello("day la thu vien 1");
   printAB(b: 5,s: "hello");
 
