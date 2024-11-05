@@ -1,44 +1,46 @@
 import 'dart:ffi';
 
-import 'student.dart';
-import 'thuvien.dart';
-
-main() {
-  int a = 5, c = 4;
-  int? z;
-  double b = 3.17;
-  print("hello $a $z $c ${sum(a, c)} "); //truyen ham
-  printHello("day la thu vien 1");
-  printAB(b: 5,s: "hello");
-
-  // for(int i = 0; i < 20 ; i++)
+void main() {
+  // int sum=0;
+  // for(int i=0;i<=100;i++)
   // {
-
-  //   print("gia tri $i");
-
+  //   sum+=i;
   // }
-  int d=20;
-  while(d>0)
-  {
-    print("gia tri d:$d");
-    d--;
-  }
-
+  // print('tong 1-100:$sum');
+  outPrintDate(6, 11, 2024);
+  // int a = 7, b = 8;
+  // //print('tong: ${tinhTong(a, b)}\ntich ${tinhTich(a, b)}\nthuong ${tinhThuong(a, b)}');
+  // String c = "-";
+  // switch (c) {
+  //   case '+':
+  //     print("Tổng: ${tinhTong(a, b)}");
+  //     break;
+  //   case '*':
+  //      print("Tích: ${tinhTich(a, b)}");
+  //     break;
+  //     case '-': print("Hieu: ${tinhHieu(a, b)}");
+  //   case '/':
+  //     print("Thương: ${tinhThuong(a, b)}");
+  //     break;
+  //     default: print('errro'); break;
+  // }
 }
-
-int sum(int a, int b) {
+void outPrintDate(int d, int m, int y)
+{
+  print('$d-$m-$m');
+}
+int tinhTong(int a, int b) {
   return a + b;
 }
 
-void printAB({ int? a, int? b,String? s,String? test}) {
-  if(a != null){
-    print("a = $a");
-    return;
-  }
-  if(b != null){
-    print("b = $b");
-    return;
-  }
-      print("a = $a , b = $b");
+int tinhTich(int a, int b) {
+  return a * b;
+}
 
+double tinhThuong(int a, int b) {
+  return a / b;
+}
+int tinhHieu(int a, int b)
+{
+  return a-b;
 }
