@@ -1,22 +1,7 @@
 
-<<<<<<< HEAD
 void main() {
   // int sum=0;
   // for(int i=0;i<=100;i++)
-=======
-import 'thuvien.dart';
-import 'dart:io';
-
-main() {
-  int a = 5, c = 4;
-  int? z;
-  double b = 3.17;
-  print("hello $a $z $c ${sum(a, c)} "+ stdin.readLineSync()); //truyen ham
-  printHello("day la thu vien 1");
-  printAB(b: 5,s: "hello");
-
-  // for(int i = 0; i < 20 ; i++)
->>>>>>> bdafa48576eaf1335fdfed870fadb85e98869534
   // {
   //   sum+=i;
   // }
